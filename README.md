@@ -23,6 +23,30 @@ dependencies {
 
 ##Sample Usage
 
+```java
+public void checkPermissionAndTakePhoto(){
+    Permissions.checkPermission(this, new OnPermissionResultTask() {
+        @Override
+        public void onPermissionGranted(@NonNull String[] permissions) throws SecurityException {
+            takePhoto();
+        }
+
+        @Override
+        public void onPermissionDenied(@NonNull String[] grantedPermissions, @NonNull String[] deniedPermissions) {
+            Toast.makeText(this, "Permissions denied!", Toast.LENGTH_LONG).show();
+        }
+    }, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+}
+```
+
+* Method onPermissionDenied() is optional
+
+@Override
+public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    Permissions.onRequestPermissionsResult(requestCode, permissions, grantResults);
+}
+
 ##Developed By
 
  * Rafal Zajfert - <rafal.zajfert@gmail.com>
