@@ -1,5 +1,5 @@
-# Logger
-Simple and useful Android logger library.
+# PermissionTools
+Library for simplify android permissions management
 
 ##Gradle Dependency (jCenter)
 
