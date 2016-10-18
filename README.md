@@ -37,15 +37,15 @@ public void checkPermissionAndTakePhoto(){
         }
     }, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 }
-```
-
-* Method onPermissionDenied() is optional
 
 @Override
 public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
     super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     Permissions.onRequestPermissionsResult(requestCode, permissions, grantResults);
 }
+```
+
+**Method onPermissionDenied(String[], String[]) is optional*
 
 ##Developed By
 
