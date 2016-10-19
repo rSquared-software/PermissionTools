@@ -13,6 +13,7 @@ import android.util.SparseArray;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -26,6 +27,7 @@ public class Permissions {
     private static int sMaxRequestCode = 10000;
 
     private static SparseArray<PermissionRequest> sPermissionRequests = new SparseArray<>();
+    private static final Object LOCK = new Object();
 
     /**
      * Determine whether you have been granted a particular {@code permissions}.
@@ -175,7 +177,11 @@ public class Permissions {
      * @see android.support.v4.app.Fragment#onRequestPermissionsResult(int, String[], int[])
      */
     public static void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        PermissionRequest request = sPermissionRequests.get(requestCode);
+        PermissionRequest request;
+        synchronized (LOCK) {
+            request = sPermissionRequests.get(requestCode);
+            sPermissionRequests.delete(requestCode);
+        }
         if (request != null) {
             List<String> missingPermissions = new ArrayList<>();
             List<String> grantedPermissions = new ArrayList<>(Arrays.asList(request.mPermissions));

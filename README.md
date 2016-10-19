@@ -5,7 +5,7 @@ Library for simplify android permissions management
 
 ```Gradle
 dependencies {
-    compile 'com.rafalzajfert:permission-tools:1.0.0'
+    compile 'com.rafalzajfert:permission-tools:1.0.1'
 }
 ```
 
@@ -17,7 +17,7 @@ dependencies {
 <dependency>
     <groupId>com.rafalzajfert</groupId>
     <artifactId>permission-tools</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 

@@ -27,17 +27,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Permissions.checkPermission(MainActivity.this, new OnPermissionResultTask() {
                     @Override
                     public void onPermissionGranted(@NonNull String[] permissions) throws SecurityException {
                         takePhoto();
                     }
-
-                    @Override
-                    public void onPermissionDenied(@NonNull String[] grantedPermissions, @NonNull String[] deniedPermissions) {
-                        Toast.makeText(MainActivity.this, String.format(PERMISSION_DENIED_MSG, Arrays.toString(deniedPermissions), Arrays.toString(grantedPermissions)) , Toast.LENGTH_LONG).show();
-                    }
                 }, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
             }
         });
 
