@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.rafalzajfert.permissiontools.sample.MainFragmentActivity">
+    tools:context="com.rafalzajfert.permissiontools.sample.software.rafalzajfert.permissiontools.sample.MainFragmentActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

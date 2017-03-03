@@ -1,4 +1,4 @@
-package com.rafalzajfert.permissiontools;
+package software.rsquared.permissiontools;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,14 +6,11 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.util.SparseArray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 import java.util.Random;
 
 /**

@@ -5,21 +5,11 @@ Library for simplify android permissions management
 
 ```Gradle
 dependencies {
-    compile 'com.rafalzajfert:permission-tools:1.0.1'
+    compile 'software.rsquared:permission-tools:1.1.0'
 }
 ```
 
 [ ![Download](https://api.bintray.com/packages/rafalzajfert/maven/permission-tools/images/download.svg) ](https://bintray.com/rafalzajfert/maven/permission-tools/_latestVersion)
-
-##Maven Dependency
-
-```Maven
-<dependency>
-    <groupId>com.rafalzajfert</groupId>
-    <artifactId>permission-tools</artifactId>
-    <version>1.0.1</version>
-</dependency>
-```
 
 ##Sample Usage
 
@@ -49,11 +39,11 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
 
 ##Developed By
 
- * Rafal Zajfert - <rafal.zajfert@gmail.com>
+ * Rafal Zajfert - <rz@rsquared.software>
 
 ##License
 
-    Copyright 2016 Rafal Zajfert
+    Copyright 2017 rSquared s.c. R. Orlik, R. Zajfert
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

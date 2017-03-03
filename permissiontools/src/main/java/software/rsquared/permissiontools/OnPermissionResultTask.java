@@ -1,4 +1,4 @@
-package com.rafalzajfert.permissiontools;
+package software.rsquared.permissiontools;
 
 import android.support.annotation.NonNull;
 

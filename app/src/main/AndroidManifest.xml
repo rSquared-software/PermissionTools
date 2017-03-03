@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.rafalzajfert.permissiontools.sample">
+          package="software.rsquared.permissiontools.sample">
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="software.rsquared.permissiontools.sample.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -19,13 +19,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainFragmentActivity"
+            android:name="software.rsquared.permissiontools.sample.MainFragmentActivity"
             android:label="@string/title_activity_main_fragment"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="software.rsquared.permissiontools.sample.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rafalzajfert.permissiontools.sample.MainActivity"/>
+                android:value="software.rsquared.permissiontools.sample.MainActivity"/>
         </activity>
     </application>
 

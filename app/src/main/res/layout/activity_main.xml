@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.rafalzajfert.permissiontools.sample.MainActivity">
+    tools:context="com.rafalzajfert.permissiontools.sample.software.rafalzajfert.permissiontools.sample.MainActivity">
 
     <Button
         android:id="@+id/button"
