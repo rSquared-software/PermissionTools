@@ -9,7 +9,7 @@ dependencies {
 }
 ```
 
-[ ![Download](https://api.bintray.com/packages/rafalzajfert/maven/permission-tools/images/download.svg) ](https://bintray.com/rafalzajfert/maven/permission-tools/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/rsquared/maven/permission-tools/images/download.svg) ](https://bintray.com/rsquared/maven/permission-tools/_latestVersion)
 
 ##Sample Usage
 
