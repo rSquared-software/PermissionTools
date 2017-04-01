@@ -1,7 +1,7 @@
 # PermissionTools
 Library for simplify android permissions management
 
-##Gradle Dependency (jCenter)
+## Gradle Dependency (jCenter)
 
 ```Gradle
 dependencies {
@@ -11,7 +11,7 @@ dependencies {
 
 [ ![Download](https://api.bintray.com/packages/rsquared/maven/permission-tools/images/download.svg) ](https://bintray.com/rsquared/maven/permission-tools/_latestVersion)
 
-##Sample Usage
+## Sample Usage
 
 ```java
 public void checkPermissionAndTakePhoto(){
@@ -37,11 +37,11 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
 
 **Method onPermissionDenied(String[], String[]) is optional*
 
-##Developed By
+## Developed By
 
  * Rafal Zajfert - <rz@rsquared.software>
 
-##License
+## License
 
     Copyright 2017 rSquared s.c. R. Orlik, R. Zajfert
 
