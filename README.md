@@ -5,7 +5,7 @@ Library for simplify android permissions management
 
 ```Gradle
 dependencies {
-    compile 'software.rsquared:permission-tools:1.1.0'
+    compile 'software.rsquared:permission-tools:1.1.1'
 }
 ```
 
