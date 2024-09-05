@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 27
@@ -23,17 +23,15 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.0.2'
 }
 
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
-//gradlew clean build bintrayUpload -PdryRun=false
-publish {
-    userOrg = 'rsquared'
-    groupId = 'software.rsquared'
-    artifactId = 'permission-tools'
-    publishVersion = '1.1.1'
-    desc = 'Library for simplify android permissions management'
-    website = 'https://github.com/rSquared-software/PermissionTools'
-    bintrayUser = properties.getProperty("bintray.oss.user")
-    bintrayKey = properties.getProperty("bintray.apikey")
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.rSquared-software'
+                artifactId = 'PermissionTools'
+                version = '1.1.2'
+            }
+        }
+    }
 }
